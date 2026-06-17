@@ -1,6 +1,6 @@
 # PD-SFANC
 
-This is the code repository for the paper: **"Predictive Directional Selective Fixed-Filter Active Noise Control for Moving Sources via a Convolutional Recurrent Neural Network"**, accepted by *Interspeech 2026*. The paper is available on https://arxiv.org/abs/2409.05470.
+This is the code repository for the paper: **"Predictive Directional Selective Fixed-Filter Active Noise Control for Moving Sources via a Convolutional Recurrent Neural Network"**, accepted by *Interspeech 2026*. The paper is available on [https://arxiv.org/abs/2409.05470](https://arxiv.org/abs/2604.23144).
 
 
 ## Highlights
