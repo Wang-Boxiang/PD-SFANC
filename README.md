@@ -2,6 +2,16 @@
 
 This is the code repository for the paper: **"Predictive Directional Selective Fixed-Filter Active Noise Control for Moving Sources via a Convolutional Recurrent Neural Network"**, published in *Interspeech 2026*.
 
+## Overview
+
+<p align="center">
+  <img src="data/main_control.jpg" alt="PD-SFANC control diagram" width="760">
+</p>
+
+<p align="center">
+  <img src="data/doa_prediction.png" alt="DoA prediction overview" width="760">
+</p>
+
 ## Release Contents
 
 ```text
