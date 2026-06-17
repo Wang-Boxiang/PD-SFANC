@@ -1,6 +1,14 @@
 # PD-SFANC
 
-This is the code repository for the paper: **"Predictive Directional Selective Fixed-Filter Active Noise Control for Moving Sources via a Convolutional Recurrent Neural Network"**, published in *Interspeech 2026*.
+This is the code repository for the paper: **"Predictive Directional Selective Fixed-Filter Active Noise Control for Moving Sources via a Convolutional Recurrent Neural Network"**, accepted by *Interspeech 2026*. The paper is available on https://arxiv.org/abs/2409.05470.
+
+
+## Highlights
+
+- **Predictive directional ANC for moving sources.** PD-SFANC estimates the incoming noise direction before selecting the control filter, allowing the controller to respond to source motion rather than only to the current error signal.
+- **CRNN-based direction prediction.** A convolutional recurrent neural network is used to infer the source azimuth from multichannel microphone observations, providing frame-level directional information for filter selection.
+- **Selective fixed-filter control.** Instead of adapting filters online, PD-SFANC selects from a bank of pretrained directional control filters, reducing online computational cost while preserving directional control capability.
+- **End-to-end real-world simulation.** The released notebook demonstrates the full inference pipeline, including direction prediction, filter selection, secondary-path simulation, and denoising result visualization.
 
 ## Overview
 
@@ -11,13 +19,6 @@ This is the code repository for the paper: **"Predictive Directional Selective F
 <p align="center">
   <img src="data/doa_prediction.png" alt="DoA prediction overview" width="760">
 </p>
-
-## Highlights
-
-- **Predictive directional ANC for moving sources.** PD-SFANC estimates the incoming noise direction before selecting the control filter, allowing the controller to respond to source motion rather than only to the current error signal.
-- **CRNN-based direction prediction.** A convolutional recurrent neural network is used to infer the source azimuth from multichannel microphone observations, providing frame-level directional information for filter selection.
-- **Selective fixed-filter control.** Instead of adapting filters online, PD-SFANC selects from a bank of pretrained directional control filters, reducing online computational cost while preserving directional control capability.
-- **End-to-end real-world simulation.** The released notebook demonstrates the full inference pipeline, including direction prediction, filter selection, secondary-path simulation, and denoising result visualization.
 
 ## Release Contents
 
@@ -75,4 +76,13 @@ python scripts/run_realworld_linear.py
 
 ## Citation
 
-If this code is useful for your research, please cite our associated PD-SFANC paper.
+If this code is useful for your research, please cite the paper:
+
+```text
+@article{wang2026predictive,
+  title={Predictive Directional Selective Fixed-Filter Active Noise Control for Moving Sources via a Convolutional Recurrent Neural Network},
+  author={Wang, Boxiang and Luo, Zhengding and Shi, Dongyuan and Ji, Junwei and Su, Xiruo and Gan, Woon-Seng},
+  journal={arXiv preprint arXiv:2604.23144},
+  year={2026}
+}
+```
