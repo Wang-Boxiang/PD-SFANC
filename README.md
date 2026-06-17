@@ -21,7 +21,6 @@ data/
     Demo noise, pretrained control filters, and secondary path.
 ```
 
-This release does not include data generation scripts, training scripts, or baseline implementations.
 
 ## Installation
 
@@ -55,17 +54,7 @@ For command-line execution, the same demo can be run with:
 python scripts/run_realworld_linear.py
 ```
 
-## Expected Demo Output
 
-With the bundled assets, the real-world linear demo should report:
-
-```text
-Top-1 azimuth accuracy: 1.0000
-Angular MAE: 2.00 deg
-Mean noise reduction after warmup: about 15 dB
-```
-
-Small numerical differences may occur across CUDA, PyTorch, and `gpuRIR` versions.
 
 ## Citation
 
