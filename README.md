@@ -1,8 +1,6 @@
 # PD-SFANC
 
-This repository provides a minimal open-source implementation of Prediction-Driven Spatial-Filtering Active Noise Control (PD-SFANC).
-
-The current release focuses on the inference-only real-world linear trajectory demo used in our paper. It includes the pretrained azimuth classifier, pretrained control filters, the secondary path, and a runnable Jupyter notebook for the final denoising simulation.
+This is the code repository for the paper: **"Predictive Directional Selective Fixed-Filter Active Noise Control for Moving Sources via a Convolutional Recurrent Neural Network"**, published in *Interspeech 2026*.
 
 ## Release Contents
 
