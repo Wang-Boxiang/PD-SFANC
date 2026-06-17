@@ -12,6 +12,13 @@ This is the code repository for the paper: **"Predictive Directional Selective F
   <img src="data/doa_prediction.png" alt="DoA prediction overview" width="760">
 </p>
 
+## Highlights
+
+- **Predictive directional ANC for moving sources.** PD-SFANC estimates the incoming noise direction before selecting the control filter, allowing the controller to respond to source motion rather than only to the current error signal.
+- **CRNN-based direction prediction.** A convolutional recurrent neural network is used to infer the source azimuth from multichannel microphone observations, providing frame-level directional information for filter selection.
+- **Selective fixed-filter control.** Instead of adapting filters online, PD-SFANC selects from a bank of pretrained directional control filters, reducing online computational cost while preserving directional control capability.
+- **End-to-end real-world simulation.** The released notebook demonstrates the full inference pipeline, including direction prediction, filter selection, secondary-path simulation, and denoising result visualization.
+
 ## Release Contents
 
 ```text
